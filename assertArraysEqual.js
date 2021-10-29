@@ -1,13 +1,25 @@
 
-
-  const assertArraysEqual = function(setA, setB) {
-    for (let i = 0; i < setA.length && setB.length; i++) {
-      if (setA[i] !== setB[i]) {
-                                                  //[A]-actual  //[B]-expected
-        console.log(`🟥 Assertion Failed: ${setA} !== ${setB}`);
+function eqArrays(arr1, arr2){
+    for (let i = 0; i < arr1.length ; i++) {
+      if (arr1[i] === arr2[i] && (i < arr1.length - 1)) {
+        continue;
       }
-    }                                           //[A]-actual  //[B]-expected
-    console.log(`🟩 Assertion Passed: ${setA} === ${setB}`);
+      else if (arr1[i] === arr2[i] && (i === arr1.length - 1)) {
+        return true;
+      }
+      else {
+        return false
+      }
+    }
+  }
+
+
+  const assertArraysEqual = function(actual, expected) {
+    if (eqArrays(actual, expected)) {
+      console.log(`✅✅✅ Assertion Passed : ${(actual)} === ${(expected)}`);
+    } else {
+      console.log(`🛑🛑🛑 Assertion Failed : ${(actual)} !== ${(expected)}`);
+    }
   };
 
 
