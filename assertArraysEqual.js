@@ -20,7 +20,7 @@ function eqArrays(arr1, arr2){
     }
   };
 
-  module.exports = assertArraysEqual;
+  module.exports = assertArraysEqual; 
   //module.exports = eqArrays;
 
 
