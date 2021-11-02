@@ -15,20 +15,38 @@ const letterPositions = require('./letterPositions');
 const takeUntil = require('./takeUntil');
 
 
+// module.exports = {
+//     head: head,
+//     tail: tail,
+//     middle: middle,
+//     assertEqual: assertEqual,
+//     eqArrays: eqArrays,
+//     assertArraysEqual: assertArraysEqual,
+//     eqObjects: this.eqObjects,
+//     assertObjectsEqual:assertObjectsEqual,
+//     without: without,
+//     countOnly: countOnly,
+//     countLetters: countLetters,
+//     findKey: findKey,
+//     findkeyByValue: findkeyByValue,
+//     letterPositions: letterPositions,
+//     takeUntil: takeUntil
+// };
+
 module.exports = {
-    head: head,
-    tail: tail,
-    middle: middle,
-    assertEqual: assertEqual,
-    eqArrays: eqArrays,
-    assertArraysEqual: assertArraysEqual,
-    eqObjects: this.eqObjects,
-    assertObjectsEqual:assertObjectsEqual,
-    without: without,
-    countOnly: countOnly,
-    countLetters: countLetters,
-    findKey: findKey,
-    findkeyByValue: findkeyByValue,
-    letterPositions: letterPositions,
-    takeUntil: takeUntil
-};
+    head,
+    tail,
+    middle,
+    assertEqual,
+    eqArrays,
+    assertArraysEqual,
+    eqObjects,
+    assertObjectsEqual,
+    without,
+    countOnly,
+    countLetters,
+    findKey,
+    findkeyByValue,
+    letterPositions,
+    takeUntil
+}
